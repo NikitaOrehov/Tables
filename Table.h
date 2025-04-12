@@ -21,8 +21,8 @@ public:
     int GetEfficiency()const{return _efficiency;};
     bool IsEmpty()const{return _dataCount==0;}
     virtual bool IsFull()const =0;
-    virtual Key Getkey() const=0;
-    virtual PDatValue GetValue()const=0;
+    virtual Key GetKey() const=0;
+    virtual PDatValue GetValuePtr()const=0;
 
 
     //методы вставки, поиска и удаления

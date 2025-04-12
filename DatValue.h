@@ -9,13 +9,12 @@ protected:
 
 public:
     DatValue(){}
-    virtual DatValue* GetCopy()=0;
+    virtual DatValue* GetCopy()const=0;
 
     friend std::ostream& operator<<(std::ostream &os, const DatValue& dv){
         if(&dv!=nullptr){
             dv.Print(os);
         }
-
         return os;
     }
 

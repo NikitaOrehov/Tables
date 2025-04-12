@@ -16,7 +16,11 @@ public:
     void SetData(PDatValue data);
     PDatValue GetData()const;
 
-    virtual PDatValue GetCopy();
+    void Print(std::ostream& os)const override{
+        std::cout << _key << " : " << *_data << "\n";
+    }
+
+    PDatValue GetCopy() const override;
     TabRecord& operator=(const TabRecord& tr);
 
     virtual bool operator==(const TabRecord& tr)const;

@@ -1,0 +1,9 @@
+# ninja log v6
+20	1130	7661965976981389	CMakeFiles/main.dir/TabRecord.cpp.obj	ba83d7c7aa2b7e24
+20	208	7661987887070367	build.ninja	a235abc588ca4a8a
+24	1105	7661971776246846	CMakeFiles/main.dir/main.cpp.obj	f67047404e3bd9df
+39	1007	7661967439146377	CMakeFiles/main.dir/SortTable.cpp.obj	5f3e275c2355c604
+31	1002	7661967439066590	CMakeFiles/main.dir/ArrayTable.cpp.obj	efe669d37bb12aa
+1106	1255	7661971787068196	main.exe	c86fa024ad6fed66
+35	1035	7661967439106483	CMakeFiles/main.dir/ScanTable.cpp.obj	bc8dc1b4decba495
+14	24	7661965976572220	clean	8c45b54705a541e8

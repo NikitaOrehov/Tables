@@ -1,5 +1,7 @@
 #pragma once
 #include "Table.h"
+#include "marks.h"
+#include <string>
 
 
 class TableTestKit{
@@ -8,17 +10,28 @@ private:
 
 
 public:
-    TableTestKit(Table& table);
-    void FillTable();
+    TableTestKit(Table& table) : _table(table){}
+    void FillTable(){}
 
-    void GenBenchmarkTab();//генерация таблицы какой-то(?)
+    void GenBenchmarkTab(std::vector<std::string> keys) {
+        for (int i = 0; i < 100; i++) {
+            _table.InsRecord(keys[i], new Marks());
+        }
+    }
 
-    void ShowTable();
 
-    void FindRecord();//запуск на 100 рандомно выбранных записях
-    void DelRecord();//запуск на 100 рандомно выбранных записях
+    void ShowTable(){
+        if (_table.Reset()) return;
+        do {
+            std::cout << _table.GetKey() << " " << *_table.GetValuePtr() << "\n";
+        } while (!_table.GoNext());
+    }
 
-    void PrintMetrics();//распечатать количество итераций, время и ошибки на выполнение какой-то задачи
+    void FindRecord(){}
+
+    void DelRecord() {}
+
+    void PrintMetrics() {}
 
 
 

@@ -18,7 +18,7 @@ protected:
     void QuickSplit(PTabRecord* pMem, size_t size, size_t& pivot);
 
 public:
-    SortTable(size_t tabSize = 25) : ScanTable(tabSize) {};
+    SortTable(size_t tabSize = 25) : ScanTable(tabSize), _sortMethod(Quick){};
     SortTable(const ScanTable& st) {
         *this = st;
     }

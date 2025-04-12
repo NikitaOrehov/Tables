@@ -1,8 +1,14 @@
 #include "ScanTable.h"
 
 
-PDatValue ScanTable::FindRecord(const Key& key){
-
+PDatValue ScanTable::Find(const Key& key) {
+    if (Reset()) return nullptr;
+    do {
+        if (this->GetKey() == key) {
+            return this->GetValuePtr();
+        }
+    } while (!this->GoNext());
+    return nullptr;
 }
 void ScanTable::InsRecord(const Key& key, PDatValue value){
     if(IsFull())
@@ -11,10 +17,9 @@ void ScanTable::InsRecord(const Key& key, PDatValue value){
         _records[_dataCount]=new TabRecord(key, value);//нужно override print прям тут
         _dataCount++;
     }
-
 }
 void ScanTable::DelRecord(const Key& key){
-    PDatValue tmp=FindRecord(key);
+    PDatValue tmp=Find(key);
     if(tmp==nullptr)
         throw "no element with this key";
     else{

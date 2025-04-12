@@ -45,7 +45,7 @@ SortTable& SortTable::operator=(const ScanTable& st){
     _dataCount = st.GetDataCount();
     _records = new PTabRecord[_tabSize];
     for (size_t i = 0; i < _dataCount; i++){
-        _records[i] = (PTabRecord)st._records[i]->GetCopy();
+        _records[i] = static_cast<PTabRecord>(st._records[i]->GetCopy());
     }
     SortData();
     _curPos = 0;

@@ -32,21 +32,22 @@ public:
 
 
     //информационные методы
-    virtual bool IsFull()const{
+    virtual bool IsFull()const override {
         return _dataCount>=_tabSize;
     }
     size_t GetTabSize()const{
         return _tabSize;
     }
 
-
-    virtual Key GetKey()const{
+    virtual Key GetKey() const override{
         return GetKey(DataPos::Current);
     }
 
-    virtual PDatValue GetValuePtr()const{
+    virtual PDatValue GetValuePtr() const override{
         return GetValuePtr(DataPos::Current);
     }
+
+
 
     virtual Key GetKey(DataPos position)const;
     virtual PDatValue GetValuePtr(DataPos position)const;
