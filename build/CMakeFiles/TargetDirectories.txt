@@ -1,3 +1,0 @@
-/home/s23380409@unn.global/project/Tables/build/CMakeFiles/main.dir
-/home/s23380409@unn.global/project/Tables/build/CMakeFiles/edit_cache.dir
-/home/s23380409@unn.global/project/Tables/build/CMakeFiles/rebuild_cache.dir

@@ -1,9 +1,12 @@
 # ninja log v6
-20	1130	7661965976981389	CMakeFiles/main.dir/TabRecord.cpp.obj	ba83d7c7aa2b7e24
-20	208	7661987887070367	build.ninja	a235abc588ca4a8a
-24	1105	7661971776246846	CMakeFiles/main.dir/main.cpp.obj	f67047404e3bd9df
-39	1007	7661967439146377	CMakeFiles/main.dir/SortTable.cpp.obj	5f3e275c2355c604
-31	1002	7661967439066590	CMakeFiles/main.dir/ArrayTable.cpp.obj	efe669d37bb12aa
-1106	1255	7661971787068196	main.exe	c86fa024ad6fed66
-35	1035	7661967439106483	CMakeFiles/main.dir/ScanTable.cpp.obj	bc8dc1b4decba495
-14	24	7661965976572220	clean	8c45b54705a541e8
+11	28	7667121645653969	clean	8c45b54705a541e8
+29	1090	7667121646200450	CMakeFiles/main.dir/ScanTable.cpp.obj	2484ae128681bbfe
+25	1138	7667121646160529	CMakeFiles/main.dir/ArrayTable.cpp.obj	2a92845c28b6718c
+34	1118	7667121646250291	CMakeFiles/main.dir/SortTable.cpp.obj	f84fd15d0aa0747a
+1667	1815	7667122352534864	main.exe	c86fa024ad6fed66
+22	1134	7667121646130935	CMakeFiles/main.dir/TabRecord.cpp.obj	5d232cb26bd325e3
+31	1666	7667122336184833	CMakeFiles/main.dir/main.cpp.obj	37989bcff89b9b12
+21	1839	7667122769921233	CMakeFiles/main.dir/main.cpp.obj	37989bcff89b9b12
+1840	2025	7667122788114105	main.exe	c86fa024ad6fed66
+23	735	7667123114773239	CMakeFiles/main.dir/ScanTable.cpp.obj	2484ae128681bbfe
+736	877	7667123121902754	main.exe	c86fa024ad6fed66

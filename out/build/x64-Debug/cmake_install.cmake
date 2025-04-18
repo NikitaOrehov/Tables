@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/ornik/source/repos/NikitaOrehov/Tables
+# Install script for directory: C:/Users/ornik/source/repos/Tables
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Users/ornik/source/repos/NikitaOrehov/Tables/out/install/x64-Debug")
+  set(CMAKE_INSTALL_PREFIX "C:/Users/ornik/Source/Repos/Tables/out/install/x64-Debug")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -47,6 +47,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-  file(WRITE "C:/Users/ornik/source/repos/NikitaOrehov/Tables/out/build/x64-Debug/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "C:/Users/ornik/source/repos/Tables/out/build/x64-Debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
